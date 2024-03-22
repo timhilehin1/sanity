@@ -101,6 +101,12 @@ export default {
     },
 
     {
+      name:'productTest',
+      type:'string',
+      title:'Product Test'
+    },
+
+    {
       name: 'productColor',
       type: 'array',
       title: 'Product Color',

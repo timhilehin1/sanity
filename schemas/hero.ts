@@ -9,6 +9,11 @@ export default {
             title: 'Hero Title',
         },
         {
+            name:'heroTest',
+            type:'string',
+            title:'This is a test field'
+        },
+        {
             name: 'heroDescription',
             type: 'string',
             title: 'Hero Description',

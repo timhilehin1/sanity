@@ -1,3 +1,5 @@
+import {uniqueName} from './uniqueName'
+
 export default {
   name: 'color',
   type: 'document',
@@ -7,7 +9,7 @@ export default {
       name: 'colorName',
       type: 'string',
       title: 'Color name',
-      validation: (Rule: any) => Rule.required().error('Color name is required.'),
+      validation: (Rule: any) => Rule.required().error('Color name is required.').custom(uniqueName('colorName')),
     },
 
     {

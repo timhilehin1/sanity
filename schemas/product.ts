@@ -100,11 +100,6 @@ export default {
       of: [{type: 'reference', to: [{type: 'size'}]}],
     },
 
-    {
-      name:'productTest',
-      type:'string',
-      title:'Product Test'
-    },
 
     {
       name: 'productColor',
@@ -112,6 +107,20 @@ export default {
       title: 'Product Color',
       description: 'Select the colors available for this product',
       of: [{type: 'reference', to: [{type: 'color'}]}],
+    },
+    {
+      name: 'productMaterial',
+      type: 'array',
+      title: 'Product Material',
+      description: 'Select the materials this product is made of',
+      of: [{type: 'reference', to: [{type: 'material'}]}],
+    },
+    {
+      name: 'seats',
+      type: 'number',
+      title: 'Seats',
+      description: 'Only for seating, e.g. 3 for a 3-seater sofa. Leave empty for tables, beds, etc.',
+      validation: (Rule: any) => Rule.integer().min(1).max(12),
     },
     {
       name: 'productsAvailable',

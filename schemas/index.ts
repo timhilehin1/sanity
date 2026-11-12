@@ -13,6 +13,7 @@ import deals from './deals'
 import gramGallery from './gramGallery'
 import businessInformation from './businessInformation'
 import color from './color'
+import material from './material'
 export const schemaTypes = [
   discountProduct,
   discount,
@@ -28,5 +29,6 @@ export const schemaTypes = [
   deals,
   gramGallery,
   businessInformation,
-  color
+  color,
+  material,
 ]
